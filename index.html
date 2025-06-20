@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electric Vehicles Stations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Electric Vehicles Charging</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About EV</a></li>
+        <li><a href="#stations">Charging Stations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Electric Vehicles</h2>
+    <p>Electric vehicles (EVs) are clean, green, and the future of transportation. India is rapidly shifting toward EV adoption.</p>
+    <div class="full-width-image">
+  <img src="https://www.shutterstock.com/image-vector/electric-vehicle-charging-station-3d-600nw-2418087563.jpg" alt="EV Charging" />
+</div>
+  </section>  
+    
+  <section id="stations">
+    <h2>Search Charging Stations</h2>
+    <input type="text" id="searchInput" placeholder="Enter city name" />
+    <button onclick="searchStation()">Search</button>
+    <div id="stationResults"></div>
+    <div id="map"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required /><br />
+      <input type="email" placeholder="Your Email" required /><br />
+      <textarea placeholder="Message" required></textarea><br />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Electric Vehicles</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
